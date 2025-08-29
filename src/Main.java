@@ -81,14 +81,14 @@ public class Main {
         System.out.println(money + " SEK konverteras till: ");
         System.out.printf(format2_3, euro,"EUR");
         System.out.printf(format2_3, dollar,"USD");
-*/
+
         // Övning 3.1
 
         System.out.println("Ålderskontroll");
         System.out.println("Ange er ålder: ");
 
         int age3_1 = scanner.nextInt();
-        System.out.println("Okej, om ni är " + age3_1 + " så får ni: ");
+        System.out.println("Okej, om ni är " + age3_1 + " eller över så får ni: ");
         if (age3_1 >= 18) {
             System.out.println("köra bil!");
             }
@@ -101,6 +101,109 @@ public class Main {
         else {
             System.out.println("INTE köpa alkohol!");
         }
+        if (age3_1 >= 20) {
+            System.out.println("gå på Systembolaget!");
+        }
+        else {
+            System.out.println("INTE gå på Systembolaget!");
+        }
+        if (age3_1 >= 65) {
+            System.out.println("gå i pension!");
+        }
+        else {
+            System.out.println("INTE gå i pension!");
+        }
+
+
+
+        // Övning 3.2
+
+        System.out.println("Hur många poäng fick ni på provet?");
+        int score = scanner.nextInt();
+        if (score > 89){
+            System.out.println("Betyg A, Grattis ni fick ett toppenbetyg!");
+        }
+        if (score > 79 && score <= 89){
+            System.out.println("Betyg B, Grattis ni fick ett toppenbetyg!");
+        }
+        if (score > 69 && score <= 79){
+            System.out.println("Betyg C, Grattis ni blev godkänd!");
+        }
+        if (score > 59 && score <= 69){
+            System.out.println("Betyg D, Grattis ni blev godkänd!");
+        }
+        if (score < 60){
+            System.out.println("Betyg F, nu får ni ha kul med att lära er mer!");
+        }
+
+
+
+
+        // Övning 3.3
+
+        //Scanner scanner2 = new Scanner(System.in);
+
+        System.out.println("Vad är temperaturen idag? (°C)");
+        double temp3_3 = scanner.nextDouble();
+        if (temp3_3 < 0){
+            System.out.println("Ta på dig vinterjacka!");
+        }
+        if (temp3_3 >= 0 && temp3_3 < 10){
+            System.out.println("Kläd dig varmt!");
+        }
+        if (temp3_3 >= 10 && temp3_3 < 20){
+            System.out.println("Perfekt väder för en hoodie!");
+        }
+        if (temp3_3 >= 20){
+            System.out.println("Shorts-väder!");
+        }
+
+
+
+        // Övning 4.1
+
+        System.out.println("För att logga in som administratör vänligen ange användarnamn och lösenord");
+        System.out.print("Användarnamn: ");
+        String usernamne4_1 = scanner.next();
+        System.out.print("Lösenord: ");
+        String password4_1 = scanner.next();
+        if (usernamne4_1.equals("admin") && password4_1.equals("password123")){
+            System.out.println("Välkommen admin!");
+        }
+        else {
+            System.out.println("Fel användarnamn eller lösenord");
+        }
+
+         */
+
+        //Övning 4.2
+
+        String format4_2 = "%-20s%s%n";
+
+        System.out.print("Vad kostar varan? ");
+        double price4_2 = scanner.nextDouble();
+        System.out.print("Är ni student? ");
+        String isStudent4_2 = scanner.next().trim();
+        System.out.print("Är ni medlem? ");
+        String isMember4_2 = scanner.next().trim();
+        int discount4_2 = 0;
+        if (isStudent4_2.equalsIgnoreCase("ja") && isMember4_2.equalsIgnoreCase("ja")){
+            discount4_2 = 15;
+            System.out.println("Ni är student och medlem");
+        }
+        else if (isMember4_2.equalsIgnoreCase("ja")) {
+            discount4_2 = 5;
+            System.out.println("Ni är endast medlem");
+        }
+        else if (isStudent4_2.equalsIgnoreCase("ja")){
+            discount4_2 = 10;
+            System.out.println("Ni är endast student");
+        }
+        double finalPrice4_2 = price4_2 * (double) (100 - discount4_2) / 100;
+        System.out.printf(format4_2, "Originalpris:",price4_2 + " kr");
+        System.out.printf(format4_2,"Rabatt:", discount4_2 + "%");
+        System.out.printf(format4_2,"Rabatterat pris:", finalPrice4_2 + " kr");
+
 
 
     }
