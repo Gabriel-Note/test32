@@ -264,7 +264,13 @@ public class Main {
 
         // Övning 5.2
 
-
+        System.out.println("För vilket nummer vill ni ha en multiplikationstabell?");
+        System.out.println("ange ett heltal (funkar bäst för 1-10)");
+        int multiplicationNumber = scanner.nextInt();
+        for (int i = 1; i <= 10; i++){
+            int result = i * multiplicationNumber;
+            System.out.println(i + " * " + multiplicationNumber + " = " + result);
+        }
 
 
     }
