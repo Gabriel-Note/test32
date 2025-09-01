@@ -1,3 +1,5 @@
+import com.sun.source.tree.WhileLoopTree;
+
 import javax.sound.midi.MidiFileFormat;
 import java.util.Scanner;
 
@@ -332,8 +334,15 @@ public class Main {
 
         // Övning 6.2
 
-
-
+        System.out.println("Ange ålder (mellan 1-120): ");
+        int age6_2;
+        String tryAgain = "";
+        do {
+            System.out.println(tryAgain);
+            tryAgain = "Ogiltigt, ange din ålder igen (1-120)";
+            age6_2 = scanner.nextInt();
+        } while (age6_2 < 1 || age6_2 > 120);
+        System.out.println("Er ålder är " + age6_2);
     }
 }
 
