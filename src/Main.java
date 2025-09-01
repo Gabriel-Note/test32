@@ -1,3 +1,4 @@
+import javax.sound.midi.MidiFileFormat;
 import java.util.Scanner;
 
 public class Main {
@@ -260,7 +261,7 @@ public class Main {
 
         }
 
-         */
+
 
         // Övning 5.2
 
@@ -272,6 +273,29 @@ public class Main {
             System.out.println(i + " * " + multiplicationNumber + " = " + result);
         }
 
+
+
+        // Övning 5.3
+
+        int secretNumber = 42;
+
+        System.out.println("Gissa det hemliga nummret mellan 1-100 (heltal)");
+        int guess = 0;
+        while (guess != secretNumber) {
+            guess = scanner.nextInt();
+            if (guess > secretNumber) {
+                System.out.println("För högt");
+            } else if (guess < secretNumber) {
+                System.out.println("för lågt");
+            } else {
+                System.out.println("Mitt i prick");
+            }
+        }
+
+
+         */
+
+        // Övning 6.1
 
     }
 }
