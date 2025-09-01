@@ -1,0 +1,15 @@
+välkomna till spelaren
+bygg upp svaren till respektive fråga
+deklarera en rättSvar counter
+    segment 1
+    {
+    ställ fråga 1
+    visa svarsalternativ (switch)
+    uppdatera counter om det var rätt svar
+    ge feedback om svaret (rätt eller fel)
+    }
+upprepa segment 1 för de övriga frågorna
+beroende på hur många rätt man har får man olika betyg
+if eller switch för att kolla hur många rätt man hade
+ange betyg A,B,C,D,E.
+printa slutresultat
