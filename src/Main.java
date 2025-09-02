@@ -336,7 +336,7 @@ public class Main {
 
         System.out.println("Ange ålder (mellan 1-120): ");
         int age6_2;
-        String tryAgain = "";
+        String tryAgain = " ";
         do {
             System.out.println(tryAgain);
             tryAgain = "Ogiltigt, ange din ålder igen (1-120)";
@@ -350,7 +350,7 @@ public class Main {
         System.out.println("Välkommen till den triviala quizzen");
         System.out.println("Varje fråga kommer ha 4 alternativ mellan siffrorna 1-4");
         System.out.println("Vänligen ange det alternativet som passar bäst genom att trycka på tillhörande siffra på vänster sida (1-4)");
-        System.out.println("");
+        System.out.println(" ");
         boolean loopCheck = true;
         int currentAnswer;
         int correctAnswer1 = 2;
@@ -373,13 +373,13 @@ public class Main {
             switch (currentAnswer){
                 case 1, 3, 4:
                     System.out.println("Tyvärr, nummer " + correctAnswer1 + " var rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 case 2:
                     numberOfCorrectAnswers += 1;
                     System.out.println("Rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 default:
@@ -399,13 +399,13 @@ public class Main {
             switch (currentAnswer){
                 case 2, 3, 4:
                     System.out.println("Tyvärr, nummer " + correctAnswer2 + " var rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 case 1:
                     numberOfCorrectAnswers += 1;
                     System.out.println("Rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 default:
@@ -425,13 +425,13 @@ public class Main {
             switch (currentAnswer){
                 case 1, 2, 3:
                     System.out.println("Tyvärr, nummer " + correctAnswer3 + " var rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 case 4:
                     numberOfCorrectAnswers += 1;
                     System.out.println("Rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 default:
@@ -451,13 +451,13 @@ public class Main {
             switch (currentAnswer){
                 case 2, 3, 4:
                     System.out.println("Tyvärr, nummer " + correctAnswer4 + " var rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 case 1:
                     numberOfCorrectAnswers += 1;
                     System.out.println("Rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 default:
@@ -477,13 +477,13 @@ public class Main {
             switch (currentAnswer){
                 case 1, 3, 4:
                     System.out.println("Tyvärr, nummer " + correctAnswer5 + " var rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 case 2:
                     numberOfCorrectAnswers += 1;
                     System.out.println("Rätt svar");
-                    System.out.println("");
+                    System.out.println(" ");
                     loopCheck = false;
                     break;
                 default:
@@ -536,10 +536,10 @@ public class Main {
         System.out.println("Men akta er för enligt rykten finns det fällor och monster i grottan");
         System.out.println("Vi står nu utanför grottan och du ska göra ditt första av många beslut");
         System.out.println("går du in i grottan eller inte?");
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("Var god välj ett alternativ 1 eller 0");
         System.out.println("(PS ni kan alltid välja noll för att avsluta spelet)");
-        System.out.println("");
+        System.out.println(" ");
         System.out.println("1: Gå in i grottan");
         System.out.println("0: Gå tillbaka till stan (Avslutar spelet)");
         while (loopCheck) {
@@ -547,7 +547,7 @@ public class Main {
             switch (currentSelection) {
                 case 0:
                     System.out.println("Är ni säkra på att ni vill avsluta? (poäng kommer inte sparas/visas)");
-                    System.out.println("");
+                    System.out.println(" ");
                     System.out.println("1: Ja, avsluta");
                     System.out.println("2: Nej, fortsätt");
                     currentSelection = scanner.nextInt();
@@ -563,7 +563,7 @@ public class Main {
                         System.out.println("När du går in i grottan märker du hur lite ljus det finns och du tänder din fackla");
                         System.out.println("Du ser två tydliga tunnelvägar, en till höger och en till vänster");
                         System.out.println("Vilken väg tar ni?");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("2: Gå vänster");
                         System.out.println("3: Gå höger");
                     }
@@ -579,7 +579,7 @@ public class Main {
                         System.out.println("På en vägg finns det en på gränsen till onaturligt rund sten, täkt med en massa mossa och klängväxter");
                         System.out.println("Det är svårt att se men det är något inristat i stenen som ser ut som en uppochnervänd stol");
                         System.out.println("Ni ser även en dörr i bergsväggen och en till tunnel vid sidan om");
-                        System.out.println("");
+                        System.out.println(" ");
                         // Hemligt val: 4 för att komma till rum 4
                         System.out.println("5: Ta tunneln");
                         System.out.println("6: Öppna dörren");
@@ -593,7 +593,7 @@ public class Main {
                     if (currentRoom == 1){
                         currentRoom = 3;
                         System.out.println("Du går genom tunneln och stöter på en dörr i sidan av väggen, men tunneln fortsätter även frammåt");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("6: Öppna dörren");
                         System.out.println("7: Fortsätt fram i tunneln");
                     }
@@ -608,7 +608,7 @@ public class Main {
                         System.out.println("Du blir väldigt nyfiken av stenen och river ner all mossa och växter");
                         System.out.println("Du ser inte längre en uppochnervänd stol eller en fyra");
                         System.out.println("Du ser en treudd");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("        |   |   |");
                         System.out.println("        |   |   |");
                         System.out.println("        |___|___|");
@@ -618,15 +618,15 @@ public class Main {
                         System.out.println("            |");
                         System.out.println("            |");
                         System.out.println("            |");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("Du kommer ihåg gammla texter om atlantis och dess starka koppling till månen");
                         System.out.println("Du väntar tills månskenet träffar treudden och den börjar svagt lysa blått");
                         System.out.println("Stenen ger vika och sjunker som om marken var gjord av vatten, och försvinner helt ner under marken");
                         System.out.println("Du går genom den nya öppningen och kommer fram till avsatts, nedanför ser du ett hav av skatter, täck av vatten");
                         System.out.println("Detta är vad du kommit hit för");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("Du vet att skatter och fällor går hand i hand, vad gör du?");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("8: Detta känns inte bra, du vänder om och går ut ur grottan");
                         System.out.println("9: Står still och spejar efter fällor");
                         System.out.println("10: Går försiktigt runt i rummet och letar efter fällor");
@@ -644,9 +644,9 @@ public class Main {
                         System.out.println("Du kommer ut ur tunneln täckt i spinelnät för att mötas av en stor spindel, större än dig själv");
                         System.out.println("Men den har ryggen vänd och ser ut att vara upptagen med att äta på något");
                         System.out.println("Du ser även att det ligger mer skatter utspridda mellan dig och spindeln");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("Vad vill du göra nu?");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("11: Plocka upp skatterna och sen lämna grottan");
                         System.out.println("12: Nöja dig med de få skatterna du redan hittat och lämna grottan");
                         treasure += 5;
@@ -664,9 +664,9 @@ public class Main {
                         System.out.println("Det finns även en eld som knappt har några lågor kvar och en gryta med till synes mat i, som troligen snart kommer brännas");
                         System.out.println("Någon måste ha varit här nyligen men du ser ingen");
                         System.out.println("Det ligger en påse på bordet med lite skatter i");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("Vad gör du?");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("13: Själ skatterna och lämnar grottan");
                         System.out.println("14: Lämnar grottan men tar lite mat och släcker elden först");
                     }
@@ -681,9 +681,9 @@ public class Main {
                         System.out.println("Du fortsätter fram i tunneln som blir smalare och smalare och allt svårare att ta sig fram i");
                         System.out.println("Du kan inte gå vidare frammåt men du kan se skatter genom hålen som du kan komma åt med lite tålamod");
                         System.out.println("Samtidigt soom du ser detta hör du något, nästan som att något kravlar i tunnlarna");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("Vad gör du?");
-                        System.out.println("");
+                        System.out.println(" ");
                         System.out.println("15: Stannar och försöker få tag i skatterna");
                         System.out.println("16: Ljuden bådar inte bra så du beger dig tillbaka ut ur grottan");
                     }
@@ -717,6 +717,7 @@ public class Main {
                         System.out.println("Inget händer");
                         System.out.println("Du dyker ner och samlar på dig allt du kan bära innan du beger dig tillbaka ut ur grottan");
                         treasure += 50;
+                        loopCheck = false;
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -731,6 +732,7 @@ public class Main {
                         System.out.println("Fram tills ditt synfält täcks av stengolv medan du ramlar framlänges, förlamad");
                         treasure += 20;
                         health = 0;
+                        loopCheck = false;
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -743,6 +745,7 @@ public class Main {
                         System.out.println("Du lyckas precis komma ttillbaka ut i tunneln som är för liten för spindeln att komma in i");
                         System.out.println("Du flyr grottan så snabbt du kan");
                         treasure -= 1;
+                        loopCheck = false;
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -753,6 +756,7 @@ public class Main {
                     if (currentRoom == 6) {
                         System.out.println("Du plockar upp påsen och går ut ur grottan lite rikare än innan");
                         treasure += 10;
+                        loopCheck = false;
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -764,6 +768,7 @@ public class Main {
                         System.out.println("Du är ingen tjuv men en bit mat kan man ju ta, den skulle ju bränts om du inte hade kommit");
                         System.out.println("Det smakar för jävligt men det gick ned");
                         health += 999;
+                        loopCheck = false;
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -779,6 +784,7 @@ public class Main {
                         System.out.println("Du springer snabbt ut ur grottan och märker hur hela din arm är förlamad");
                         treasure += 20;
                         health -= 30;
+                        loopCheck = false;
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -788,6 +794,7 @@ public class Main {
                 case 16:
                     if (currentRoom == 7) {
                         System.out.println("Du beger dig ut ur grottan tomhänt, men det känns som att det nog var bättre än alternativen");
+                        loopCheck = false;
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -801,7 +808,7 @@ public class Main {
             System.out.println("Spelet avslutas");
         }
 
-        System.out.println("");
+        System.out.println(" ");
         if (health == 0) {
             System.out.println("Du hittade " + treasure + " Skatter!");
             System.out.println("Men kommer tyvärr inte kunna spendera dem");
