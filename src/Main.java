@@ -630,8 +630,6 @@ public class Main {
                         System.out.println("8: Detta känns inte bra, du vänder om och går ut ur grottan");
                         System.out.println("9: Står still och spejar efter fällor");
                         System.out.println("10: Går försiktigt runt i rummet och letar efter fällor");
-
-  //-------------------------System.out.println("BEHÖVER UPPDATERAS!!");----------------------------------------------------------
                     }
                     else {
                         System.out.println("Du gick in i en vägg, försök igen");
@@ -799,11 +797,22 @@ public class Main {
                     System.out.println("Du gick in i en vägg, försök igen");
             }
         }
-        if (currentSelection == 0){
+        if (currentSelection == 0) {
             System.out.println("Spelet avslutas");
         }
 
-        System.out.println("ni kom ut yay");
+        System.out.println("");
+        if (health == 0) {
+            System.out.println("Du hittade " + treasure + " Skatter!");
+            System.out.println("Men kommer tyvärr inte kunna spendera dem");
+        } else if (health > 0 && health <= 100) {
+            System.out.println("Ni kom ut ur grottan levandes");
+            System.out.println("Och du hittade " + treasure + " Skatter!");
+        } else if (health > 100) {
+            System.out.println("Ni kom ut ur grottan levandes");
+            System.out.println("Grytan ni åt visade sig vara ett elexir för evigt liv");
+            System.out.println("Om det är en skatt eller förbannelse är upp till dig");
+        }
     }
 }
 
