@@ -26,6 +26,25 @@ om 0 så avslutar man spelet direkt
     7  8  9  10
   11 12 13 14 15
 
+
+         slutet    9  10
+              4    5 6      6 7
+                     2      3
+                     1      1
+
 en switch sats för case 1-10 (eller mer) där när man är på 1 bara kan välja 2 eller 3
 när man är i 3 kan man bara välja 5 eller 6 osv
 scenario 1-6 kommer innehålla ett nytt moment av att användaren får välja något nytt
+
+
+Symbol
+
+       ´|` ´|` ´|`
+        |   |   |
+        |___|___|
+            |
+            |
+            |
+            |
+            |
+            |

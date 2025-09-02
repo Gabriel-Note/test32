@@ -526,7 +526,9 @@ public class Main {
         // Program B
 
         int health = 100;
-        int money = 0;
+        int treasure = 0;
+        int currentSelection = 999;
+        int currentRoom = 0;
         boolean loopCheck = true;
         System.out.println("Hej och välkommen Äventysspelet");
         System.out.println("Ni kommer utforska en grotta med ett stort tunnelsystem");
@@ -536,10 +538,139 @@ public class Main {
         System.out.println("går du in i grottan eller inte?");
         System.out.println("");
         System.out.println("Var god välj ett alternativ 1 eller 0");
+        System.out.println("(PS ni kan alltid välja noll för att avsluta spelet)");
         System.out.println("");
         System.out.println("1: Gå in i grottan");
-        System.out.println("0: S");
+        System.out.println("0: Gå tillbaka till stan (Avslutar spelet)");
+        while (loopCheck) {
+            currentSelection = scanner.nextInt();
+            switch (currentSelection) {
+                case 0:
+                    loopCheck = false;
+                    break;
+                // Första rummet (starten på spelet)
+                case 1:
+                    if (currentRoom == 0){
+                        currentRoom = 1;
+                        System.out.println("När du går in i grottan märker du hur lite ljus det finns och du tänder din fackla");
+                        System.out.println("Du ser två tydliga tunnelvägar, en till höger och en till vänster");
+                        System.out.println("Vilken väg tar ni?");
+                        System.out.println("");
+                        System.out.println("2: Gå vänster");
+                        System.out.println("3: Gå höger");
+                    }
+                    else {
+                        System.out.println("Du gick in i en vägg, försök igen");
+                    }
+                    break;
+                // Vänstra tunneln från rum 1 till 2
+                case 2:
+                    if (currentRoom == 1){
+                        currentRoom = 2;
+                        System.out.println("Tunneln leder djupt in innan det öppnar upp sig till ett stort rum med ett stort hål i taket som månskenet att lysa igenom");
+                        System.out.println("På en vägg finns det en på gränsen till onaturligt rund sten, täkt med en massa mossa och klängväxter");
+                        System.out.println("Det är svårt att se men det är något inristat i stenen som ser ut som en uppochnervänd stol");
+                        System.out.println("Ni ser även en dörr i bergsväggen och en till tunnel vid sidan om");
+                        System.out.println("");
+                        // Hemligt val: 4 för att komma till rum 4
+                        System.out.println("5: Ta tunneln");
+                        System.out.println("6: Öppna dörren");
+                    }
+                    else {
+                        System.out.println("Du gick in i en vägg, försök igen");
+                    }
+                    break;
+                // Högra tunneln från rum 1 till 3
+                case 3:
+                    if (currentRoom == 1){
+                        currentRoom = 3;
+                        System.out.println("Detta är rum 3");
+                        System.out.println("Du går genom tunneln och stöter på en dörr i sidan av väggen, men tunneln fortsätter frammåt");
+                        System.out.println("");
+                        System.out.println("6: Öppna dörren");
+                        System.out.println("7: Fortsätt fram i tunneln");
+                    }
+                    else {
+                        System.out.println("Du gick in i en vägg, försök igen");
+                    }
+                    break;
+                case 4:
+                    if (currentRoom == 2){
+                        currentRoom = 4;
+                        System.out.println("Du blir väldigt nyfiken av stenen och river ner all mossa och växter");
+                        System.out.println("Du ser inte längre en uppochnervänd stol eller en fyra");
+                        System.out.println("Du ser en treudd");
+                        System.out.println("");
+                        System.out.println("        |   |   |");
+                        System.out.println("        |   |   |");
+                        System.out.println("        |___|___|");
+                        System.out.println("            |");
+                        System.out.println("            |");
+                        System.out.println("            |");
+                        System.out.println("            |");
+                        System.out.println("            |");
+                        System.out.println("            |");
+                        System.out.println("");
+                        System.out.println("Du kommer ihåg gammla texter om atlantis och dess starka koppling till månen");
+                        System.out.println("Du väntar tills månskenet träffar treudden och den börjar svagt lysa blått");
+                        System.out.println("Stenen ger vika och sjunker ner i marken som om det vore vatten, och försvinner helt ner under marken");
+                        System.out.println("Du går genom den nya öppningen och ser en massa skatter, detta är vad du kommit hit för");
+                        System.out.println("");
+                        System.out.println("Du vet att skatter och fällor går hand i hand, vad gör du?");
+                        System.out.println("");
+                        System.out.println("7: Rusar fram och tar så mycket ni kan bära");
+                        System.out.println("6: Står still och spejar efter fällor");
+                        System.out.println("8: Går försiktigt runt i rummet och letar efter fällor");
 
+  //-------------------------System.out.println("BEHÖVER UPPDATERAS!!");----------------------------------------------------------
+                    }
+                    else {
+                        System.out.println("Du gick in i en vägg, försök igen");
+                    }
+                    break;
+                    // Tar tunneln från rum 2 till 5
+                case 5:
+                    if (currentRoom == 2){
+                        currentRoom = 5;
+                        System.out.println("Ju djupare du går destu mer spindelnät tycker du att det finns");
+                        System.out.println("Det ligger en massa utspridda skatter längs tunneln som lätt åker ner i fickan, men du är lite fundersam till varför de låg där");
+                        System.out.println("Du kommer ut ur tunneln täckt i spinelnät för att mötas av en stor spindel");
+                        System.out.println("Men den har ryggen vänd och ser ut att vara upptagen med att äta på något");
+                        System.out.println("Du ser även att det ligger mer skatter utspridda mellan dig och spindeln");
+                        System.out.println("");
+                        System.out.println("Vad vill du göra nu?");
+                        System.out.println("");
+                        System.out.println("6: Plocka upp skatterna och sen lämna grottan");
+                        System.out.println("7: Nöja dig med de få skatterna du redan hittat och lämna grottan");
+                    }
+                    else {
+                        System.out.println("Du gick in i en vägg, försök igen");
+                    }
+                    break;
+                // Öppnar dörren från rum 2 eller 3 till 6
+                case 6:
+                    if (currentRoom == 2 || currentRoom == 3){
+                        currentRoom = 6;
+                        System.out.println("Du kommer in i ett rum med lite enklare möbler, ett bord och några pallar, två vitrinskåp och några bänkskåp");
+                        System.out.println("Det finns även en eld som knappt har några lågor kvar och en gryta med mat? i som troligen snart kommer brännas");
+                        System.out.println("Någon måste ha varit här nyligen men du ser ingen");
+                        System.out.println("Det ligger en påse på bordet med lite skatter i");
+                        System.out.println("");
+                        System.out.println("Vad gör du?");
+                        System.out.println("");
+                        System.out.println("11: Själ skatterna och lämnar grottan");
+                        System.out.println("12: Lämnar grottan men tar lite mat och släcker elden först");
+                    }
+                    else {
+                        System.out.println("Du gick in i en vägg, försök igen");
+                    }
+                    break;
+
+                default:
+                    System.out.println("Du gick in i en vägg, försök igen");
+            }
+        }
+        System.out.println("ni kom ut yay");
     }
 }
 
