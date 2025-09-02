@@ -530,12 +530,12 @@ public class Main {
         int currentSelection = 999;
         int currentRoom = 0;
         boolean loopCheck = true;
-        System.out.println("Hej och välkommen Äventysspelet");
+        System.out.println("Hej och välkommen till Äventysspelet");
         System.out.println("Ni kommer utforska en grotta med ett stort tunnelsystem");
         System.out.println("Ni måste välja rätt väg för att kunna ta er ut");
         System.out.println("Men akta er för enligt rykten finns det fällor och monster i grottan");
         System.out.println("Vi står nu utanför grottan och du ska göra ditt första av många beslut");
-        System.out.println("går du in i grottan eller inte?");
+        System.out.println("Går du in i grottan eller inte?");
         System.out.println(" ");
         System.out.println("Var god välj ett alternativ 1 eller 0");
         System.out.println("(PS ni kan alltid välja noll för att avsluta spelet)");
@@ -622,7 +622,7 @@ public class Main {
                         System.out.println("Du kommer ihåg gammla texter om atlantis och dess starka koppling till månen");
                         System.out.println("Du väntar tills månskenet träffar treudden och den börjar svagt lysa blått");
                         System.out.println("Stenen ger vika och sjunker som om marken var gjord av vatten, och försvinner helt ner under marken");
-                        System.out.println("Du går genom den nya öppningen och kommer fram till avsatts, nedanför ser du ett hav av skatter, täck av vatten");
+                        System.out.println("Du går genom den nya öppningen och kommer fram till avsatts, nedanför ser du ett hav av skatter, täckt av vatten");
                         System.out.println("Detta är vad du kommit hit för");
                         System.out.println(" ");
                         System.out.println("Du vet att skatter och fällor går hand i hand, vad gör du?");
@@ -680,7 +680,7 @@ public class Main {
                         currentRoom = 7;
                         System.out.println("Du fortsätter fram i tunneln som blir smalare och smalare och allt svårare att ta sig fram i");
                         System.out.println("Du kan inte gå vidare frammåt men du kan se skatter genom hålen som du kan komma åt med lite tålamod");
-                        System.out.println("Samtidigt soom du ser detta hör du något, nästan som att något kravlar i tunnlarna");
+                        System.out.println("Samtidigt som du ser detta hör du något, nästan som att något kravlar i tunnlarna");
                         System.out.println(" ");
                         System.out.println("Vad gör du?");
                         System.out.println(" ");
@@ -742,7 +742,7 @@ public class Main {
                 case 12:
                     if (currentRoom == 5) {
                         System.out.println("Du vänder om men tappar en av dina skatter, spindeln vänder sig om och rusar mot dig");
-                        System.out.println("Du lyckas precis komma ttillbaka ut i tunneln som är för liten för spindeln att komma in i");
+                        System.out.println("Du lyckas precis komma tillbaka ut i tunneln som är för liten för spindeln att komma in i");
                         System.out.println("Du flyr grottan så snabbt du kan");
                         treasure -= 1;
                         loopCheck = false;
@@ -813,10 +813,10 @@ public class Main {
             System.out.println("Du hittade " + treasure + " Skatter!");
             System.out.println("Men kommer tyvärr inte kunna spendera dem");
         } else if (health > 0 && health <= 100) {
-            System.out.println("Ni kom ut ur grottan levandes");
+            System.out.println("Du kom ut ur grottan levandes");
             System.out.println("Och du hittade " + treasure + " Skatter!");
         } else if (health > 100) {
-            System.out.println("Ni kom ut ur grottan levandes");
+            System.out.println("Du kom ut ur grottan levandes");
             System.out.println("Grytan ni åt visade sig vara ett elexir för evigt liv");
             System.out.println("Om det är en skatt eller förbannelse är upp till dig");
         }
