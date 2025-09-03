@@ -80,7 +80,7 @@ public class Main {
         System.out.println("Ange ett belopp i SEK som ni vill konvertera");
         float money = scanner.nextFloat();
         float euro = money * 0.085f;
-        float dollar = money * 0.091f;
+        float dollarExercise2 = money * 0.091f;
         System.out.println(money + " SEK konverteras till: ");
         System.out.printf(format2_3, euro,"EUR");
         System.out.printf(format2_3, dollar,"USD");
@@ -522,7 +522,7 @@ public class Main {
             System.out.println(numberOfCorrectAnswers + "/5 rätta svar, vilket ger er betyget " + grade + "!");
         }
 
-         */
+
         // Program B
 
         int health = 100;
@@ -820,6 +820,13 @@ public class Main {
             System.out.println("Grytan ni åt visade sig vara ett elexir för evigt liv");
             System.out.println("Om det är en skatt eller förbannelse är upp till dig");
         }
+
+         */
+
+        // Program C: Personlig kalkylator
+
+        System.out.println("vad är er månadsinkomst?");
+
     }
 }
 

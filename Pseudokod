@@ -17,7 +17,8 @@ ange betyg A,B,C,D,E.
 printa slutresultat
 
 
-Program B
+Program B: -----------------------------------------------------------
+
 skapa variabler för att hålla koll på liv och poäng
 om 0 så avslutar man spelet direkt
    0    1
@@ -48,3 +49,11 @@ Symbol
             |
             |
             |
+
+
+Program C ---------------------------------------------------
+
+variabler för månadsinkomst och utgifter (hyra, mat, el.)
+låt användaren fylla i dessa variabler
+ta inkomst minus alla utgifter och få balansen som är kvar
+
