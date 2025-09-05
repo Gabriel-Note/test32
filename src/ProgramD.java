@@ -23,18 +23,19 @@ public class ProgramD {
         };
         correctWordToGuess = wordBank[randomInt].toLowerCase();
         // System.out.println("correctWordToGuess: " + correctWordToGuess);
-        char [] ourGuessedWord = correctWordToGuess.toCharArray();
 
+        // Jag vill utgå från fromatet s___e för ordet spöke
+        char [] ourGuessedWord = correctWordToGuess.toCharArray();
         for (int i = 0; i < ourGuessedWord.length; i++){
             if (i != 0 && i != ourGuessedWord.length-1){
                 ourGuessedWord[i] = '_';
             }
         }
-        System.out.println("var vänlig gissa på en bokstav som kan finnas i ordet(första och sista bokstaven kan även vara en giltig gissning): ");
+        System.out.println("var vänlig gissa på en bokstav som kan finnas i ordet" +
+                "(första och sista bokstaven kan även vara en giltig gissning): ");
         System.out.println(ourGuessedWord);
 
         while (true) {
-
             String charInput = scanner.next().trim().toLowerCase();
             char ourGuessedLetter = charInput.charAt(0);
 
@@ -55,7 +56,3 @@ public class ProgramD {
         System.out.println("Grattis det tog " + numberOfAttempts + " försök för att få fram rätt ord");
     }
 }
-/*
-
-
- */
