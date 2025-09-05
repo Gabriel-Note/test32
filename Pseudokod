@@ -57,3 +57,24 @@ variabler för månadsinkomst och utgifter (hyra, mat, el.)
 låt användaren fylla i dessa variabler
 ta inkomst minus alla utgifter och få balansen som är kvar
 
+
+Program D
+
+deklarera en array med 10 ord i lowercase
+deklarera en int variable med random
+deklarera antal försök
+loopa över arrayn (behövde inte loopa över arrayn då vi kan använda indexet direkt)
+plocka ut ordet som är mappat till nummret från int variablen
+skapa en ny String variabel "ord" med första och sista bokstaven, med understreck för resterande bokstäver
+printa "ord" variabeln
+
+låt användaren gissa en bokstav
+uppdatera antal försök
+gör om den till lowercase
+itterera över "ord" (och gör de till lowercase) och uppdatera det indexet som stämmer mot originalordet(med hjälp av random variabeln i början)och bokstaven som gissades
+
+if statement som händer när "ord" == originalordet
+printar antal försök
+
+
+

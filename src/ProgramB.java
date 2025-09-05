@@ -139,6 +139,15 @@ public class ProgramB {
                 case 6:
                     if (currentRoom == 2 || currentRoom == 3){
                         currentRoom = 6;
+                        /*
+                        String[] dialog = {
+                                "hejsamn \n",
+                                "akbfknsdfs"
+                        };
+                        for (String s : dialog){
+                            System.out.println(s);
+                        }
+                        */
                         System.out.println("Du kommer in i ett rum med lite enklare möbler, ett bord och några pallar, två vitrinskåp och några bänkskåp");
                         System.out.println("Det finns även en eld som knappt har några lågor kvar och en gryta med till synes mat i, som troligen snart kommer brännas");
                         System.out.println("Någon måste ha varit här nyligen men du ser ingen");
